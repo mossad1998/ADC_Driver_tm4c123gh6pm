@@ -1,0 +1,11 @@
+main.pbi: G:\Github\ADC_Driver_tm4c123gh6pm\ADC_Channel_12Bits\main.c \
+  G:\Github\ADC_Driver_tm4c123gh6pm\ADC_Channel_12Bits/tm4c123gh6pm.h \
+  G:\Github\ADC_Driver_tm4c123gh6pm\ADC_Channel_12Bits/GPIO_Driver.h \
+  G:\IAR\arm\inc\c\stdint.h G:\IAR\arm\inc\c\ycheck.h \
+  G:\IAR\arm\inc\c\yvals.h G:\IAR\arm\inc\c\DLib_Defaults.h \
+  G:\IAR\arm\inc\c\DLib_Config_Normal.h G:\IAR\arm\inc\c\DLib_Product.h \
+  G:\IAR\arm\inc\c\stdbool.h G:\IAR\arm\inc\c\stdio.h \
+  G:\IAR\arm\inc\c\ysizet.h G:\IAR\arm\inc\c\string.h \
+  G:\IAR\arm\inc\c\DLib_Product_string.h \
+  G:\Github\ADC_Driver_tm4c123gh6pm\ADC_Channel_12Bits/ADC_Driver.h \
+  G:\IAR\arm\inc\c\math.h G:\IAR\arm\inc\c\DLib_float_setup.h
