@@ -4,6 +4,26 @@
 #include <stdint.h>
 #include "stdio.h"
 
+//Example of using ADC_Driver
+
+/* This driver uses the GPIO_Driver and ADC_Driver libraries which provide definitions for
+   different functions that help to intialize Tiva c  peripherals.
+   To use this driver you will also need to use tm4c123gh6pm to map 
+   registers correctly.
+   This example used to read adc value from different potentiometers
+   logic of tiva c is 3.3 and it has 12bit adc so minimum volt that it can sense is .8mV
+   Used pins
+   ===========
+   Pin GND as Ground
+   Pin E3 as adc input
+   Pin 3.3 as Source
+
+   History
+   =======
+   2021/August/08  - First release (Mosad)
+   mo.eldibani@gmail.com
+*/
+
 void PORTE_Initialization();                                                    //To intialize Pins in port E for adc
 void ADC_Initialization();                                                      //To Intialize adc
 void Delay(unsigned long counter);                                              //Most dummy delay
