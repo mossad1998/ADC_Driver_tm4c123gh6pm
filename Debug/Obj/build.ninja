@@ -1,0 +1,29 @@
+#Generating source browse information for project ADC_Driver_V2
+
+
+#Abbreviations
+cc = G$:\IAR\common\bin\SourceIndexer.exe
+ll = G$:\IAR\common\bin\PbdLink.exe
+bd = G$:\IAR\common\bin\makeBrowseData.exe
+
+
+
+#Rules
+rule index
+  depfile = $out.dep
+  command = $cc -out=$out -f $in
+rule link
+  command = $ll -M $out $in
+rule browsedata
+  command = $bd $in -output  $out
+
+
+
+#Build steps
+build ADC_Driver.pbi : index ADC_Driver.xcl
+build GPIO_Driver.pbi : index GPIO_Driver.xcl
+build main.pbi : index main.xcl
+build ADC_Driver_V2.pbd : link ADC_Driver.pbi GPIO_Driver.pbi main.pbi
+build ADC_Driver_V2.pbw : browsedata ADC_Driver_V2.pbd
+
+
